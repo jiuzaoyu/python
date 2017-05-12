@@ -1,0 +1,12 @@
+									Linux下安装python
+1、官网下载地址：http://www.python.org/download/
+2、安装步骤：
+	tar -xzf Python-2.7.3.tgz
+	在Python-2.7.3 根目录下运行
+	./configure
+	make
+	make install
+3、安装完后，系统并不会用高版本替换系统默认的低版本，版本替换：
+	mv /usr/bin/python /usr/bin/python2.7 //对系统默认版本python进行操作
+	ln -s /usr/local/bin/python2.7 /usr/bin/python   //注意第一个路径是新安装的python版本路径，而第二个路径是系统默认路径
+4、ps: 修改了新的python版本，那么原先安装的python插件都不在新版本python目录下，因此需要重新安装
